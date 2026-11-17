@@ -1,0 +1,31 @@
+version: 2
+
+sources:
+  - name: raw
+    description: >
+      The `raw` schema: append-only source event snapshots, reference data, ingestion audit
+      records and quarantined payloads (TAD section 10). dbt never mutates these relations.
+    schema: raw
+    tables:
+      - name: accounts
+        description: "raw.accounts — one synthetic account."
+      - name: models
+        description: "raw.models — one synthetic API model."
+      - name: plans
+        description: "raw.plans — one subscription plan."
+      - name: account_plan_history
+        description: "raw.account_plan_history — one account-plan effective interval."
+      - name: customer_pricing_schedules
+        description: "raw.customer_pricing_schedules — one model-plan-component customer price version."
+      - name: provider_cost_schedules
+        description: "raw.provider_cost_schedules — one provider-model-component provider cost version."
+      - name: api_request_events
+        description: "raw.api_request_events — one source snapshot/version of a logical request (append-only)."
+      - name: api_attempt_events
+        description: "raw.api_attempt_events — one source snapshot/version of an execution attempt (append-only)."
+      - name: ingestion_batches
+        description: "raw.ingestion_batches — one loader execution."
+      - name: event_delivery_log
+        description: "raw.event_delivery_log — one delivery received."
+      - name: quarantined_events
+        description: "raw.quarantined_events — one invalid or rejected delivery payload."

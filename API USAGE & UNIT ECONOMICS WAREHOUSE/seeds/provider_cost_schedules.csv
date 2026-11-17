@@ -1,0 +1,16 @@
+provider_cost_version_id,provider_id,model_id,usage_component,unit_of_measure,cost_per_million_tokens,currency,valid_from,valid_to,source_updated_at
+pcv_0001,prov_nimbus,model_text_01,input,tokens,1.800000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+pcv_0002,prov_nimbus,model_text_01,input,tokens,1.944000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+pcv_0003,prov_nimbus,model_text_01,output,tokens,9.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+pcv_0004,prov_nimbus,model_text_01,output,tokens,9.720000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+pcv_0005,prov_nimbus,model_text_02,input,tokens,0.600000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+pcv_0006,prov_nimbus,model_text_02,output,tokens,3.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+pcv_0007,prov_atlas,model_text_03,input,tokens,0.300000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+pcv_0008,prov_atlas,model_text_03,output,tokens,1.500000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+pcv_0009,prov_atlas,model_reason_01,input,tokens,4.800000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+pcv_0010,prov_atlas,model_reason_01,input,tokens,5.184000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+pcv_0011,prov_atlas,model_reason_01,output,tokens,19.200000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+pcv_0012,prov_atlas,model_reason_01,output,tokens,20.736000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+pcv_0013,prov_nimbus,model_embed_01,input,tokens,0.060000,USD,2026-06-01 00:00:00,2026-07-15 00:00:00,2026-11-07 00:00:00
+pcv_0014,prov_nimbus,model_embed_01,input,tokens,0.060000,USD,2026-07-20 00:00:00,,2026-11-07 00:00:00
+pcv_0015,prov_nimbus,model_embed_01,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00

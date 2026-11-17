@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" width="1180" height="640" role="img">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#4d6a99"/></marker></defs>
+<rect width="1180" height="640" fill="#0b1220"/>
+<rect x="0" y="0" width="1180" height="4" fill="#fbbf24"/>
+<text x="40" y="52" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="25" font-weight="700" fill="#e7edf7" text-anchor="start" letter-spacing="0.3">Unit economics on this build</text>
+<text x="40" y="76" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">NEXORA API  ·  USAGE &amp;amp; UNIT ECONOMICS WAREHOUSE  ·  measured, simulated USD</text>
+<rect x="40.0" y="104" width="263.0" height="104" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="40.0" y="104" width="263.0" height="4" rx="2" fill="#38bdf8"/>
+<text x="56.0" y="130" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.6" font-weight="600" fill="#93a4bf" text-anchor="start" letter-spacing="0.8">KNOWN REVENUE</text>
+<text x="56.0" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0">$40.95</text>
+<text x="56.0" y="194" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">6,508 billing lines</text>
+<rect x="319.0" y="104" width="263.0" height="104" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="319.0" y="104" width="263.0" height="4" rx="2" fill="#fb7185"/>
+<text x="335.0" y="130" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.6" font-weight="600" fill="#93a4bf" text-anchor="start" letter-spacing="0.8">KNOWN PROVIDER COST</text>
+<text x="335.0" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#fb7185" text-anchor="start" letter-spacing="0">$31.53</text>
+<text x="335.0" y="194" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">9,540 cost lines</text>
+<rect x="598.0" y="104" width="263.0" height="104" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="598.0" y="104" width="263.0" height="4" rx="2" fill="#34d399"/>
+<text x="614.0" y="130" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.6" font-weight="600" fill="#93a4bf" text-anchor="start" letter-spacing="0.8">GROSS PROFIT</text>
+<text x="614.0" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#34d399" text-anchor="start" letter-spacing="0">$9.09</text>
+<text x="614.0" y="194" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">complete rows only</text>
+<rect x="877.0" y="104" width="263.0" height="104" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="877.0" y="104" width="263.0" height="4" rx="2" fill="#fbbf24"/>
+<text x="893.0" y="130" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.6" font-weight="600" fill="#93a4bf" text-anchor="start" letter-spacing="0.8">GROSS MARGIN</text>
+<text x="893.0" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="30" font-weight="700" fill="#fbbf24" text-anchor="start" letter-spacing="0">22.64%</text>
+<text x="893.0" y="194" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">revenue ÷ cost, not averaged</text>
+<rect x="40" y="232" width="548" height="258" rx="10" fill="#1b2740" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<text x="60" y="258" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="700" fill="#a78bfa" text-anchor="start" letter-spacing="0.6">TWO POPULATIONS, NEVER MULTIPLIED</text>
+<text x="60" y="284" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.6" font-weight="600" fill="#e7edf7" text-anchor="start" letter-spacing="0">4,100 logical requests  →  4,833 execution attempts</text>
+<rect x="60" y="302" width="230" height="60" rx="8" fill="#141f33" stroke="#38bdf8" stroke-width="1.4"/>
+<text x="74" y="324" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.2" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0.5">REVENUE GRAIN</text>
+<text x="74" y="344" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#e7edf7" text-anchor="start" letter-spacing="0">1 request × 1 component</text>
+<rect x="358" y="302" width="210" height="60" rx="8" fill="#141f33" stroke="#fb7185" stroke-width="1.4"/>
+<text x="372" y="324" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.2" font-weight="700" fill="#fb7185" text-anchor="start" letter-spacing="0.5">COST GRAIN</text>
+<text x="372" y="344" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#e7edf7" text-anchor="start" letter-spacing="0">1 terminal attempt × 1 component</text>
+<line x1="292" y1="332" x2="354" y2="332" stroke="#4d6a99" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="60" y="396" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">priced lines</text>
+<text x="230" y="396" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="700" fill="#34d399" text-anchor="end" letter-spacing="0">4,994</text>
+<text x="60" y="418" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">free zero-rate</text>
+<text x="230" y="418" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="700" fill="#38bdf8" text-anchor="end" letter-spacing="0">1,446</text>
+<text x="60" y="440" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">missing usage</text>
+<text x="230" y="440" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="700" fill="#fbbf24" text-anchor="end" letter-spacing="0">64</text>
+<text x="60" y="462" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">missing price</text>
+<text x="230" y="462" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="700" fill="#fb7185" text-anchor="end" letter-spacing="0">4</text>
+<text x="300" y="396" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">cost:  8,163 priced · 662 not-consumed zero</text>
+<text x="300" y="418" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">618 unknown consumption · 82 missing usage</text>
+<text x="300" y="440" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.2" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">15 missing rate — NULL, never substituted</text>
+<rect x="608" y="232" width="532" height="258" rx="10" fill="#1b2740" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<text x="628" y="258" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0.5">REVENUE VS COST BY MONTH (USD, modelled)</text>
+<text x="628" y="295" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Jun 2026</text>
+<rect x="700" y="284" width="195.0" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="295" width="148.7" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="294" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">5.85</text>
+<text x="1060" y="294" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">4.46</text>
+<text x="628" y="327" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Jul 2026</text>
+<rect x="700" y="316" width="231.7" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="327" width="179.3" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="326" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">6.95</text>
+<text x="1060" y="326" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">5.38</text>
+<text x="628" y="359" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Aug 2026</text>
+<rect x="700" y="348" width="263.7" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="359" width="194.7" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="358" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">7.91</text>
+<text x="1060" y="358" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">5.84</text>
+<text x="628" y="391" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Sep 2026</text>
+<rect x="700" y="380" width="288.3" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="391" width="220.3" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="390" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">8.65</text>
+<text x="1060" y="390" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">6.61</text>
+<text x="628" y="423" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Oct 2026</text>
+<rect x="700" y="412" width="290.7" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="423" width="231.3" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="422" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">8.72</text>
+<text x="1060" y="422" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">6.94</text>
+<text x="628" y="455" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.8" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">Nov 2026</text>
+<rect x="700" y="444" width="95.7" height="9" rx="4.5" fill="#38bdf8"/>
+<rect x="700" y="455" width="76.7" height="7" rx="3.5" fill="#fb7185" opacity="0.85"/>
+<text x="1012" y="454" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#38bdf8" text-anchor="end" letter-spacing="0">2.87</text>
+<text x="1060" y="454" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.4" font-weight="600" fill="#fb7185" text-anchor="end" letter-spacing="0">2.30</text>
+<text x="628" y="480" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.6" font-weight="400" fill="#fbbf24" text-anchor="start" letter-spacing="0">Nov is an in-flight month: 87 requests still pending, so its certified totals stay NULL.</text>
+<rect x="40" y="512" width="1100" height="100" rx="10" fill="#101a2b" stroke="#24405f" stroke-width="1.2" opacity="1"/>
+<text x="58" y="538" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="700" fill="#34d399" text-anchor="start" letter-spacing="0.6">COMPLETENESS, NOT OPTIMISM</text>
+<text x="58" y="562" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">3,794 of 3,948 daily groups have certified revenue; 3,481 have certified cost. The remainder publish a known subtotal plus the exact reason</text>
+<text x="58" y="582" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">(pending request, pending attempt, missing usage, missing rate). 68 billing and 715 cost lines are visibly incomplete rather than silently zeroed.</text>
+<text x="58" y="600" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">5 quarantined deliveries · 15 duplicates suppressed · 10 backfill-required rows · 0 unresolved plans · 0 fanout failures.</text>
+</svg>

@@ -1,0 +1,20 @@
+select
+    trim(source_event_id)                      as source_event_id,
+    trim(logical_request_id)                   as logical_request_id,
+    cast(entity_version as integer)            as entity_version,
+    lower(trim(event_action))                  as event_action,
+    trim(supersedes_event_id)                  as supersedes_event_id,
+    trim(account_id)                           as account_id,
+    trim(model_id)                             as model_id,
+    cast(request_created_at as timestamptz)    as request_created_at,
+    cast(request_resolved_at as timestamptz)   as request_resolved_at,
+    cast(event_timestamp as timestamptz)       as event_timestamp,
+    lower(trim(request_status))                as request_status,
+    cast(input_tokens as bigint)               as input_tokens,
+    cast(output_tokens as bigint)              as output_tokens,
+    trim(source_system)                        as source_system,
+    trim(correction_reason)                    as correction_reason,
+    trim(payload_hash)                         as payload_hash,
+    cast(batch_id as varchar)                  as batch_id,
+    cast(ingested_at as timestamptz)           as ingested_at
+from {{ source('raw', 'api_request_events') }}

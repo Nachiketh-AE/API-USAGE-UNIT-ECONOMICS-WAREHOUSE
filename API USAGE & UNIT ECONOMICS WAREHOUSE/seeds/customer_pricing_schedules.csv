@@ -1,0 +1,44 @@
+customer_pricing_version_id,model_id,plan_id,usage_component,unit_of_measure,price_per_million_tokens,currency,valid_from,valid_to,source_updated_at
+cpv_0001,model_text_01,free,input,tokens,0.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0002,model_text_01,free,input,tokens,0.000000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0003,model_text_01,starter,input,tokens,3.750000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0004,model_text_01,starter,input,tokens,3.937500,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0005,model_text_01,business,input,tokens,3.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0006,model_text_01,business,input,tokens,3.150000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0007,model_text_01,free,output,tokens,0.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0008,model_text_01,free,output,tokens,0.000000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0009,model_text_01,starter,output,tokens,18.750000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0010,model_text_01,starter,output,tokens,19.687500,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0011,model_text_01,business,output,tokens,15.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0012,model_text_01,business,output,tokens,15.750000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0013,model_text_02,free,input,tokens,0.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0014,model_text_02,free,input,tokens,0.000000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0015,model_text_02,starter,input,tokens,1.250000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0016,model_text_02,starter,input,tokens,1.312500,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0017,model_text_02,business,input,tokens,1.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0018,model_text_02,business,input,tokens,1.050000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0019,model_text_02,free,output,tokens,0.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0020,model_text_02,free,output,tokens,0.000000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0021,model_text_02,starter,output,tokens,6.250000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0022,model_text_02,starter,output,tokens,6.562500,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0023,model_text_02,business,output,tokens,5.000000,USD,2026-06-01 00:00:00,2026-09-01 00:00:00,2026-11-07 00:00:00
+cpv_0024,model_text_02,business,output,tokens,5.250000,USD,2026-09-01 00:00:00,,2026-11-07 00:00:00
+cpv_0025,model_text_03,free,input,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0026,model_text_03,starter,input,tokens,0.625000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0027,model_text_03,business,input,tokens,0.500000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0028,model_text_03,free,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0029,model_text_03,starter,output,tokens,3.125000,USD,2026-06-01 00:00:00,2026-07-01 00:00:00,2026-11-07 00:00:00
+cpv_0030,model_text_03,starter,output,tokens,3.125000,USD,2026-07-04 00:00:00,,2026-11-07 00:00:00
+cpv_0031,model_text_03,business,output,tokens,2.500000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0032,model_reason_01,free,input,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0033,model_reason_01,starter,input,tokens,10.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0034,model_reason_01,business,input,tokens,8.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0035,model_reason_01,free,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0036,model_reason_01,starter,output,tokens,40.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0037,model_reason_01,business,output,tokens,32.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0038,model_embed_01,free,input,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0039,model_embed_01,starter,input,tokens,0.125000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0040,model_embed_01,business,input,tokens,0.100000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0041,model_embed_01,free,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0042,model_embed_01,starter,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00
+cpv_0043,model_embed_01,business,output,tokens,0.000000,USD,2026-06-01 00:00:00,,2026-11-07 00:00:00

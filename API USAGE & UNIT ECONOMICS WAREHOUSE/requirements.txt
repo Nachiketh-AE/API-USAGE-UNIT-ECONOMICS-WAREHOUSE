@@ -1,0 +1,4 @@
+# Pinned execution environment used for the measured run in README.md
+dbt-core==1.12.6
+dbt-duckdb==1.11.1
+duckdb>=1.1.0

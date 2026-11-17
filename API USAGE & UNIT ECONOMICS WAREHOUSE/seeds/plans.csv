@@ -1,0 +1,4 @@
+plan_id,plan_name,plan_description,is_free_plan,is_active,source_updated_at
+free,Free,Synthetic free tier; zero customer price.,true,true,2026-11-07 00:00:00
+starter,Starter,Synthetic pay-as-you-go tier.,false,true,2026-11-07 00:00:00
+business,Business,Synthetic volume tier.,false,true,2026-11-07 00:00:00

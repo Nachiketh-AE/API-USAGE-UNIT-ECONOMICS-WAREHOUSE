@@ -1,0 +1,6 @@
+model_id,model_name,model_family,provider_id,provider_name,model_status,input_unit,output_unit,model_created_at,retired_at,source_updated_at
+model_text_01,Nexora Text 1,text_generation,prov_nimbus,Nimbus Compute,active,tokens,tokens,2025-10-01 00:00:00,,2026-11-07 00:00:00
+model_text_02,Nexora Text 2,text_generation,prov_nimbus,Nimbus Compute,active,tokens,tokens,2025-10-01 00:00:00,,2026-11-07 00:00:00
+model_text_03,Nexora Text 3 Nano,text_generation,prov_atlas,Atlas Inference,active,tokens,tokens,2025-10-01 00:00:00,,2026-11-07 00:00:00
+model_reason_01,Nexora Reason 1,text_generation,prov_atlas,Atlas Inference,active,tokens,tokens,2025-10-01 00:00:00,,2026-11-07 00:00:00
+model_embed_01,Nexora Embed 1,embedding,prov_nimbus,Nimbus Compute,active,tokens,tokens,2025-10-01 00:00:00,,2026-11-07 00:00:00

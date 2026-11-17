@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" width="1180" height="640" role="img">
+<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3.2" orient="auto"><path d="M0,0 L7,3.2 L0,6.4 z" fill="#4d6a99"/></marker></defs>
+<rect width="1180" height="640" fill="#0b1220"/>
+<rect x="0" y="0" width="1180" height="4" fill="#38bdf8"/>
+<text x="40" y="52" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="25" font-weight="700" fill="#e7edf7" text-anchor="start" letter-spacing="0.3">System architecture</text>
+<text x="40" y="76" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">NEXORA API  ·  USAGE &amp;amp; UNIT ECONOMICS WAREHOUSE  ·  6 boundaries, each with one job</text>
+<rect x="40" y="132" width="172" height="300" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="40" y="132" width="172" height="4" rx="2" fill="#38bdf8"/>
+<text x="54" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0.6">GENERATE</text>
+<line x1="54" y1="174" x2="198" y2="174" stroke="#2a3a58"/>
+<circle cx="58" cy="198" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="68" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">fixed seed 42</text>
+<circle cx="58" cy="224" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="68" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">100 accounts</text>
+<circle cx="58" cy="250" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="68" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">5 models · 3 plans</text>
+<circle cx="58" cy="276" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="68" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">price histories</text>
+<circle cx="58" cy="302" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="68" y="306" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">valid + invalid</text>
+<line x1="215" y1="282.0" x2="230" y2="282.0" stroke="#3f5a86" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="234" y="132" width="172" height="300" rx="10" fill="#1b2740" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="234" y="132" width="172" height="4" rx="2" fill="#fb7185"/>
+<text x="248" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#fb7185" text-anchor="start" letter-spacing="0.6">RAW (append-only)</text>
+<line x1="248" y1="174" x2="392" y2="174" stroke="#2a3a58"/>
+<circle cx="252" cy="198" r="2.4" fill="#fb7185" opacity="0.85"/>
+<text x="262" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">11 tables</text>
+<circle cx="252" cy="224" r="2.4" fill="#fb7185" opacity="0.85"/>
+<text x="262" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">event snapshots</text>
+<circle cx="252" cy="250" r="2.4" fill="#fb7185" opacity="0.85"/>
+<text x="262" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">delivery ledger</text>
+<circle cx="252" cy="276" r="2.4" fill="#fb7185" opacity="0.85"/>
+<text x="262" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">quarantine</text>
+<circle cx="252" cy="302" r="2.4" fill="#fb7185" opacity="0.85"/>
+<text x="262" y="306" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">batch audit</text>
+<line x1="409" y1="282.0" x2="424" y2="282.0" stroke="#3f5a86" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="428" y="132" width="172" height="300" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="428" y="132" width="172" height="4" rx="2" fill="#a78bfa"/>
+<text x="442" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#a78bfa" text-anchor="start" letter-spacing="0.6">dbt STAGING</text>
+<line x1="442" y1="174" x2="586" y2="174" stroke="#2a3a58"/>
+<circle cx="446" cy="198" r="2.4" fill="#a78bfa" opacity="0.85"/>
+<text x="456" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">11 views</text>
+<circle cx="446" cy="224" r="2.4" fill="#a78bfa" opacity="0.85"/>
+<text x="456" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">cast + rename</text>
+<circle cx="446" cy="250" r="2.4" fill="#a78bfa" opacity="0.85"/>
+<text x="456" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">no grain change</text>
+<circle cx="446" cy="276" r="2.4" fill="#a78bfa" opacity="0.85"/>
+<text x="456" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">source tests</text>
+<line x1="603" y1="282.0" x2="618" y2="282.0" stroke="#3f5a86" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="622" y="132" width="172" height="300" rx="10" fill="#1b2740" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="622" y="132" width="172" height="4" rx="2" fill="#fbbf24"/>
+<text x="636" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#fbbf24" text-anchor="start" letter-spacing="0.6">dbt INTERMEDIATE</text>
+<line x1="636" y1="174" x2="780" y2="174" stroke="#2a3a58"/>
+<circle cx="640" cy="198" r="2.4" fill="#fbbf24" opacity="0.85"/>
+<text x="650" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">10 views</text>
+<circle cx="640" cy="224" r="2.4" fill="#fbbf24" opacity="0.85"/>
+<text x="650" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">dedupe · versions</text>
+<circle cx="640" cy="250" r="2.4" fill="#fbbf24" opacity="0.85"/>
+<text x="650" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">half-open dating</text>
+<circle cx="640" cy="276" r="2.4" fill="#fbbf24" opacity="0.85"/>
+<text x="650" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">billing + cost lines</text>
+<line x1="797" y1="282.0" x2="812" y2="282.0" stroke="#3f5a86" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="816" y="132" width="172" height="300" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="816" y="132" width="172" height="4" rx="2" fill="#34d399"/>
+<text x="830" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#34d399" text-anchor="start" letter-spacing="0.6">dims + facts</text>
+<line x1="830" y1="174" x2="974" y2="174" stroke="#2a3a58"/>
+<circle cx="834" cy="198" r="2.4" fill="#34d399" opacity="0.85"/>
+<text x="844" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">4 dimensions</text>
+<circle cx="834" cy="224" r="2.4" fill="#34d399" opacity="0.85"/>
+<text x="844" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">5 facts</text>
+<circle cx="834" cy="250" r="2.4" fill="#34d399" opacity="0.85"/>
+<text x="844" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">declared grains</text>
+<circle cx="834" cy="276" r="2.4" fill="#34d399" opacity="0.85"/>
+<text x="844" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">incremental</text>
+<line x1="991" y1="282.0" x2="1006" y2="282.0" stroke="#3f5a86" stroke-width="1.8" marker-end="url(#ah)"/>
+<rect x="1010" y="132" width="172" height="300" rx="10" fill="#1b2740" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<rect x="1010" y="132" width="172" height="4" rx="2" fill="#38bdf8"/>
+<text x="1024" y="162" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0.6">MARTS (certified)</text>
+<line x1="1024" y1="174" x2="1168" y2="174" stroke="#2a3a58"/>
+<circle cx="1028" cy="198" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="1038" y="202" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">7 tables</text>
+<circle cx="1028" cy="224" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="1038" y="228" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">revenue · cost</text>
+<circle cx="1028" cy="250" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="1038" y="254" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">completeness flags</text>
+<circle cx="1028" cy="276" r="2.4" fill="#38bdf8" opacity="0.85"/>
+<text x="1038" y="280" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">pipeline health</text>
+<rect x="40" y="460" width="1100" height="62" rx="10" fill="#101a2b" stroke="#24405f" stroke-width="1.2" opacity="1"/>
+<text x="58" y="486" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#34d399" text-anchor="start" letter-spacing="0.7">IDEMPOTENCY CHAIN</text>
+<text x="58" y="508" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.6" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">stable source_event_id  →  raw PK  →  delivery ledger (accepted / duplicate / quarantined / backfill_required)  →  one row per entity  →  delete+insert on declared key</text>
+<rect x="40" y="540" width="540" height="60" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<text x="58" y="566" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#38bdf8" text-anchor="start" letter-spacing="0.7">BI CONSUMER</text>
+<text x="58" y="586" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">reads 7 certified marts only · no raw access · USD · simulated label on every KPI</text>
+<rect x="600" y="540" width="540" height="60" rx="10" fill="#131c2e" stroke="#2a3a58" stroke-width="1.2" opacity="1"/>
+<text x="618" y="566" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="700" fill="#fb7185" text-anchor="start" letter-spacing="0.7">QUALITY GATES</text>
+<text x="618" y="586" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.4" font-weight="400" fill="#93a4bf" text-anchor="start" letter-spacing="0">143 dbt tests · 12 singular rules · 0 failures on this build · fanout + null-vs-zero asserted</text>
+</svg>

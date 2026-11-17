@@ -1,0 +1,11 @@
+# DuckDB target: zero-install reproducibility for reviewers and CI.
+# Swap the output block for `type: postgres` to run the TAD's documented PostgreSQL target;
+# no model SQL changes are required (all constructs used are PostgreSQL-compatible).
+nexora_usage_economics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('NEXORA_DB_PATH', 'nexora_warehouse.duckdb') }}"
+      schema: analytics
+      threads: 4

@@ -1,0 +1,96 @@
+version: 2
+
+models:
+  - name: fct_api_request
+    description: >
+      Grain: **one resolved logical request** (`logical_request_id`). Winning correction version only;
+      `unique_key = logical_request_id` with a seven-day event-time affected-entity refresh.
+    columns:
+      - name: logical_request_id
+        tests: [not_null, unique]
+      - name: request_key
+        tests: [not_null, unique]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_account'), field: account_id}
+      - name: model_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_model'), field: model_id}
+      - name: plan_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_plan'), field: plan_id}
+      - name: request_status
+        tests:
+          - accepted_values: {values: ['pending', 'succeeded', 'failed', 'timed_out', 'cancelled']}
+
+  - name: fct_api_attempt
+    description: >
+      Grain: **one resolved execution attempt** (`attempt_id`). Account and plan are inherited from the
+      parent logical request; pending attempts are retained here and never costed.
+    columns:
+      - name: attempt_id
+        tests: [not_null, unique]
+      - name: attempt_key
+        tests: [not_null, unique]
+      - name: logical_request_id
+        tests:
+          - not_null
+          - relationships: {to: ref('fct_api_request'), field: logical_request_id}
+      - name: resource_consumption_status
+        tests:
+          - accepted_values: {values: ['consumed', 'not_consumed', 'unknown']}
+
+  - name: fct_billing_line
+    description: >
+      Grain: **one successful logical request × usage component** — at most two rows per request.
+      `unique_key = logical_request_id` so a correction that flips a request out of `succeeded`
+      removes its stale lines rather than orphaning them.
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['logical_request_id', 'usage_component']
+    columns:
+      - name: billing_line_key
+        tests: [not_null, unique]
+      - name: usage_component
+        tests:
+          - accepted_values: {values: ['input', 'output']}
+      - name: pricing_resolution_status
+        tests:
+          - accepted_values:
+              values: ['priced', 'free_zero_rate', 'missing_usage', 'missing_price', 'missing_plan', 'overlap']
+      - name: estimated_revenue_amount
+        tests:
+          - nexora_assert_expression: {expression: "estimated_revenue_amount is null or estimated_revenue_amount >= 0"}
+
+  - name: fct_provider_cost_line
+    description: >
+      Grain: **one terminal execution attempt × usage component**. Pending attempts are excluded and are
+      never implied to be zero cost.
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['attempt_id', 'usage_component']
+    columns:
+      - name: provider_cost_line_key
+        tests: [not_null, unique]
+      - name: cost_resolution_status
+        tests:
+          - accepted_values:
+              values: ['priced', 'not_consumed_zero', 'unknown_consumption', 'missing_usage', 'missing_rate', 'overlap']
+
+  - name: fct_usage_daily
+    description: >
+      Grain: **one account × model × plan × UTC date**. Request measures and billable tokens are each
+      reduced to this grain before being joined, so request revenue is never multiplied by attempt rows.
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['usage_date', 'account_id', 'model_id', 'plan_id']
+    columns:
+      - name: usage_date
+        tests: [not_null]
+      - name: total_requests
+        tests:
+          - not_null
+          - nexora_assert_expression: {expression: "total_requests >= 0"}

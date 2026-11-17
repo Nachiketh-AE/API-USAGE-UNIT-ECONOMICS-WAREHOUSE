@@ -1,0 +1,124 @@
+version: 2
+
+models:
+  - name: stg_accounts
+    description: "Grain: one account. Normalized identifiers and UTC timestamps; no grain change."
+    columns:
+      - name: account_id
+        tests: [not_null, unique]
+      - name: account_status
+        tests:
+          - accepted_values: {values: ['active', 'suspended', 'closed']}
+      - name: account_segment
+        tests:
+          - accepted_values: {values: ['startup', 'mid_market', 'enterprise']}
+
+  - name: stg_models
+    description: "Grain: one API model."
+    columns:
+      - name: model_id
+        tests: [not_null, unique]
+      - name: model_status
+        tests:
+          - accepted_values: {values: ['active', 'deprecated', 'retired']}
+
+  - name: stg_plans
+    description: "Grain: one plan."
+    columns:
+      - name: plan_id
+        tests: [not_null, unique]
+
+  - name: stg_account_plan_history
+    description: "Grain: one account-plan effective interval. Half-open: valid_from <= ts < valid_to."
+    columns:
+      - name: account_plan_history_id
+        tests: [not_null, unique]
+      - name: account_id
+        tests:
+          - not_null
+          - relationships: {to: ref('stg_accounts'), field: account_id}
+      - name: plan_id
+        tests:
+          - not_null
+          - relationships: {to: ref('stg_plans'), field: plan_id}
+
+  - name: stg_customer_pricing
+    description: "Grain: one customer price version x model x plan x usage component."
+    columns:
+      - name: customer_pricing_version_id
+        tests: [not_null, unique]
+      - name: usage_component
+        tests:
+          - accepted_values: {values: ['input', 'output']}
+      - name: model_id
+        tests:
+          - relationships: {to: ref('stg_models'), field: model_id}
+      - name: price_per_million_tokens
+        tests:
+          - not_null
+          - nexora_assert_expression: {expression: "price_per_million_tokens >= 0"}
+
+  - name: stg_provider_costs
+    description: "Grain: one provider cost version x provider x model x usage component."
+    columns:
+      - name: provider_cost_version_id
+        tests: [not_null, unique]
+      - name: usage_component
+        tests:
+          - accepted_values: {values: ['input', 'output']}
+      - name: cost_per_million_tokens
+        tests:
+          - nexora_assert_expression: {expression: "cost_per_million_tokens >= 0"}
+
+  - name: stg_api_request_events
+    description: "Grain: one source request event version (source_event_id)."
+    columns:
+      - name: source_event_id
+        tests: [not_null, unique]
+      - name: event_action
+        tests:
+          - accepted_values: {values: ['initial', 'correction']}
+      - name: request_status
+        tests:
+          - accepted_values: {values: ['pending', 'succeeded', 'failed', 'timed_out', 'cancelled']}
+      - name: account_id
+        tests:
+          - relationships: {to: ref('stg_accounts'), field: account_id}
+
+  - name: stg_api_attempt_events
+    description: "Grain: one source attempt event version (source_event_id)."
+    columns:
+      - name: source_event_id
+        tests: [not_null, unique]
+      - name: attempt_status
+        tests:
+          - accepted_values: {values: ['pending', 'succeeded', 'failed', 'timed_out', 'cancelled']}
+      - name: resource_consumption_status
+        tests:
+          - accepted_values: {values: ['consumed', 'not_consumed', 'unknown']}
+
+  - name: stg_ingestion_batches
+    description: "Grain: one loader execution."
+    columns:
+      - name: batch_id
+        tests: [not_null, unique]
+      - name: batch_status
+        tests:
+          - accepted_values: {values: ['running', 'succeeded', 'failed', 'partially_succeeded']}
+
+  - name: stg_event_delivery_log
+    description: "Grain: one received delivery."
+    columns:
+      - name: delivery_id
+        tests: [not_null, unique]
+      - name: delivery_outcome
+        tests:
+          - accepted_values: {values: ['accepted', 'duplicate', 'quarantined', 'backfill_required']}
+
+  - name: stg_quarantined_events
+    description: "Grain: one rejected or quarantined delivery payload."
+    columns:
+      - name: quarantine_id
+        tests: [not_null, unique]
+      - name: error_codes
+        tests: [not_null]

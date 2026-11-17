@@ -1,0 +1,6 @@
+quarantine_id,delivery_id,batch_id,entity_type,source_event_id,raw_payload,error_codes,quarantined_at,resolved_at,resolution_note
+qtn_00001,dlv_0009114,00000000-0000-4000-8000-000000000006,logical_request,req_ev_9001,"{""source_event_id"": ""req_ev_9001"", ""violation"": ""NEGATIVE_TOKEN_COUNT"", ""sequence"": 101}",NEGATIVE_TOKEN_COUNT,2026-11-08 00:31:00,,
+qtn_00002,dlv_0009115,00000000-0000-4000-8000-000000000006,logical_request,req_ev_9002,"{""source_event_id"": ""req_ev_9002"", ""violation"": ""UNKNOWN_STATUS"", ""sequence"": 102}",UNKNOWN_STATUS,2026-11-08 00:31:00,,
+qtn_00003,dlv_0009116,00000000-0000-4000-8000-000000000006,execution_attempt,att_ev_9001,"{""source_event_id"": ""att_ev_9001"", ""violation"": ""CONSUMPTION_CONTRACT_VIOLATION"", ""sequence"": 103}",CONSUMPTION_CONTRACT_VIOLATION,2026-11-08 00:31:00,,
+qtn_00004,dlv_0009117,00000000-0000-4000-8000-000000000006,execution_attempt,att_ev_9002,"{""source_event_id"": ""att_ev_9002"", ""violation"": ""MISSING_PARENT_REFERENCE"", ""sequence"": 104}",MISSING_PARENT_REFERENCE,2026-11-08 00:31:00,,
+qtn_00005,dlv_0009118,00000000-0000-4000-8000-000000000006,logical_request,req_ev_9003,"{""source_event_id"": ""req_ev_9003"", ""violation"": ""IDENTITY_CONFLICT"", ""sequence"": 105}",IDENTITY_CONFLICT,2026-11-08 00:31:00,,

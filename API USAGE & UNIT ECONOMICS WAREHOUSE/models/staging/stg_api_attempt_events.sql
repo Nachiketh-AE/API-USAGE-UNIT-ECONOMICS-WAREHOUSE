@@ -1,0 +1,22 @@
+select
+    trim(source_event_id)                      as source_event_id,
+    trim(attempt_id)                           as attempt_id,
+    trim(logical_request_id)                   as logical_request_id,
+    cast(entity_version as integer)            as entity_version,
+    lower(trim(event_action))                  as event_action,
+    trim(supersedes_event_id)                  as supersedes_event_id,
+    cast(attempt_number as smallint)           as attempt_number,
+    trim(model_id)                             as model_id,
+    cast(attempt_started_at as timestamptz)    as attempt_started_at,
+    cast(attempt_completed_at as timestamptz)  as attempt_completed_at,
+    cast(event_timestamp as timestamptz)       as event_timestamp,
+    lower(trim(attempt_status))                as attempt_status,
+    cast(input_tokens as bigint)               as input_tokens,
+    cast(output_tokens as bigint)              as output_tokens,
+    lower(trim(resource_consumption_status))   as resource_consumption_status,
+    trim(source_system)                        as source_system,
+    trim(correction_reason)                    as correction_reason,
+    trim(payload_hash)                         as payload_hash,
+    cast(batch_id as varchar)                  as batch_id,
+    cast(ingested_at as timestamptz)           as ingested_at
+from {{ source('raw', 'api_attempt_events') }}

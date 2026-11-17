@@ -1,0 +1,105 @@
+version: 2
+
+models:
+  - name: int_deduplicated_request_events
+    description: "Grain: one unique source_event_id. Defensive dedupe; raw uniqueness remains the primary control."
+    columns:
+      - name: source_event_id
+        tests: [not_null, unique]
+
+  - name: int_deduplicated_attempt_events
+    description: "Grain: one unique source_event_id."
+    columns:
+      - name: source_event_id
+        tests: [not_null, unique]
+
+  - name: int_resolved_requests
+    description: >
+      Grain: one logical request. Highest valid entity_version wins; every correction version is preserved
+      in raw and reported through `resolved_max_version`.
+    columns:
+      - name: logical_request_id
+        tests: [not_null, unique]
+      - name: source_event_id
+        tests:
+          - not_null
+          - unique
+      - name: request_status
+        tests:
+          - accepted_values: {values: ['pending', 'succeeded', 'failed', 'timed_out', 'cancelled']}
+
+  - name: int_resolved_attempts
+    description: "Grain: one execution attempt."
+    columns:
+      - name: attempt_id
+        tests: [not_null, unique]
+      - name: logical_request_id
+        tests:
+          - not_null
+          - relationships: {to: ref('int_resolved_requests'), field: logical_request_id}
+      - name: attempt_status
+        tests:
+          - accepted_values: {values: ['pending', 'succeeded', 'failed', 'timed_out', 'cancelled']}
+
+  - name: int_request_plan_assignments
+    description: "Grain: one logical request. Plan resolved at request_created_at against half-open intervals."
+    columns:
+      - name: logical_request_id
+        tests: [not_null, unique]
+      - name: plan_match_status
+        tests:
+          - accepted_values: {values: ['matched', 'missing', 'overlap']}
+
+  - name: int_customer_pricing_match
+    description: "Grain: one logical request x usage component. Missing price never substitutes a rate."
+    columns:
+      - name: logical_request_id
+        tests: [not_null]
+      - name: usage_component
+        tests:
+          - accepted_values: {values: ['input', 'output']}
+      - name: customer_pricing_status
+        tests:
+          - accepted_values:
+              values: ['priced', 'free_zero_rate', 'missing_usage', 'missing_price', 'missing_plan', 'overlap', 'not_eligible']
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['logical_request_id', 'usage_component']
+
+  - name: int_provider_cost_match
+    description: "Grain: one terminal attempt x usage component. Cost rate resolved at attempt_started_at."
+    columns:
+      - name: cost_resolution_status
+        tests:
+          - accepted_values:
+              values: ['priced', 'not_consumed_zero', 'unknown_consumption', 'missing_usage', 'missing_rate', 'overlap']
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['attempt_id', 'usage_component']
+
+  - name: int_billing_lines
+    description: "Grain: one successful logical request x usage component."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['logical_request_id', 'usage_component']
+    columns:
+      - name: billing_line_key
+        tests: [not_null, unique]
+      - name: pricing_resolution_status
+        tests:
+          - accepted_values: {values: ['priced', 'free_zero_rate', 'missing_usage', 'missing_price', 'missing_plan', 'overlap']}
+
+  - name: int_provider_cost_lines
+    description: "Grain: one terminal execution attempt x usage component."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['attempt_id', 'usage_component']
+    columns:
+      - name: provider_cost_line_key
+        tests: [not_null, unique]
+
+  - name: int_daily_key_spine
+    description: "Grain: one usage_date x account x model x plan key observed in any fact."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['usage_date', 'account_id', 'model_id', 'plan_id']

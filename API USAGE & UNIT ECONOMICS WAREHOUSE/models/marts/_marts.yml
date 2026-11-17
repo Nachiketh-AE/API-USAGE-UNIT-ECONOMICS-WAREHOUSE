@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: mart_usage_overview
+    description: "Grain: one date × account × model × plan. Certified read-only mart for dashboard page 1."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['usage_date', 'account_id', 'model_id', 'plan_id']
+
+  - name: mart_revenue_performance
+    description: "Grain: one date × account × model × plan. Certified read-only mart for dashboard page 2."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['usage_date', 'account_id', 'model_id', 'plan_id']
+    columns:
+      - name: revenue_is_complete
+        tests: [not_null]
+
+  - name: mart_unit_economics
+    description: >
+      Grain: one date × account × model × plan. Revenue and provider cost are reduced independently
+      before the join; certified totals are NULL whenever a constituent input is incomplete.
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['usage_date', 'account_id', 'model_id', 'plan_id']
+
+  - name: mart_account_performance
+    description: "Grain: one month × account. Month spine includes zero-activity months for comparable growth."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['month_start', 'account_id']
+
+  - name: mart_model_performance
+    description: "Grain: one month × model. Month spine includes zero-activity months for comparable growth."
+    tests:
+      - unique_combination_of_columns:
+          combination_of_columns: ['month_start', 'model_id']
+
+  - name: mart_pipeline_health
+    description: "Grain: one ingestion batch. Publishes quarantine and backfill state to the BI layer."
+    columns:
+      - name: batch_id
+        tests: [not_null, unique]
+
+  - name: mart_data_quality_summary
+    description: "Grain: one row for the whole warehouse. Certification status strip for dashboard headers."
+    columns:
+      - name: warehouse_is_certified
+        tests: [not_null]

@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: dim_account
+    description: "Grain: one account."
+    columns:
+      - name: account_key
+        tests: [not_null, unique]
+      - name: account_id
+        tests: [not_null, unique]
+
+  - name: dim_model
+    description: "Grain: one API model."
+    columns:
+      - name: model_key
+        tests: [not_null, unique]
+      - name: model_id
+        tests: [not_null, unique]
+
+  - name: dim_plan
+    description: >
+      Grain: one plan, plus a `plan_unresolved` sentinel member (`is_sentinel = true`) so a NULL plan
+      degrades a mart row to visibly incomplete instead of silently dropping it.
+    columns:
+      - name: plan_key
+        tests: [not_null, unique]
+      - name: plan_id
+        tests: [not_null, unique]
+
+  - name: dim_date
+    description: "Grain: one UTC calendar date."
+    columns:
+      - name: date_day
+        tests: [not_null, unique]

@@ -1,0 +1,7 @@
+batch_id,source_name,source_file_name,generator_seed,started_at,completed_at,batch_status,input_record_count,accepted_delivery_count,duplicate_delivery_count,quarantined_delivery_count,backfill_required_count,error_message,code_version,created_at
+00000000-0000-4000-8000-000000000001,nexora_api_simulator,batch_00_export.jsonl,42,2026-06-01 07:00:00,2026-06-01 07:04:00,succeeded,1374,1364,0,0,10,,nexora-generator@1.0.0,2026-06-01 07:00:00
+00000000-0000-4000-8000-000000000002,nexora_api_simulator,batch_01_export.jsonl,42,2026-07-01 07:00:00,2026-07-01 07:04:00,succeeded,1496,1496,0,0,0,,nexora-generator@1.0.0,2026-07-01 07:00:00
+00000000-0000-4000-8000-000000000003,nexora_api_simulator,batch_02_export.jsonl,42,2026-08-01 07:00:00,2026-08-01 07:04:00,succeeded,1640,1640,0,0,0,,nexora-generator@1.0.0,2026-08-01 07:00:00
+00000000-0000-4000-8000-000000000004,nexora_api_simulator,batch_03_export.jsonl,42,2026-09-01 07:00:00,2026-09-01 07:04:00,succeeded,1783,1783,0,0,0,,nexora-generator@1.0.0,2026-09-01 07:00:00
+00000000-0000-4000-8000-000000000005,nexora_api_simulator,batch_04_export.jsonl,42,2026-10-01 07:00:00,2026-10-01 07:04:00,succeeded,1948,1948,0,0,0,,nexora-generator@1.0.0,2026-10-01 07:00:00
+00000000-0000-4000-8000-000000000006,nexora_api_simulator,batch_05_export.jsonl,42,2026-11-08 06:00:00,2026-11-08 06:04:00,partially_succeeded,877,857,15,5,0,5 quarantined deliveries require operator review,nexora-generator@1.0.0,2026-11-08 06:00:00
